@@ -5,3 +5,20 @@ export type ConversationMessage = {
 };
 
 export type RequestStatus = 'idle' | 'loading' | 'success' | 'error';
+
+export type VideoConfig = {
+  code: string;
+  url: string;
+};
+
+export type JsonInstructionItem = {
+  id: string;
+  title: string;
+  description?: string;
+  videoCode?: string;
+};
+
+export type JsonInstructionPayload = {
+  title?: string;
+  items: JsonInstructionItem[];
+};
